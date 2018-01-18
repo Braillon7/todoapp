@@ -1,0 +1,309 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*css reset done*/
+@media screen and (min-width: 400px) {
+    #all-tasks {
+        background-color: lightgreen;
+    }
+}
+
+html, body{
+  background: #ededed;
+  height: 100%;
+  overflow: hidden;
+}
+
+*, h1, h2, h3, h4, h5, h6, p, span, div{
+  font-family: "Sans-serif" , Times, serif;
+  box-sizing: border-box;
+}
+
+.welcome-box{
+  background: rgba(0, 0, 0, .6);
+  padding: 40px 15px;
+}
+h1{
+  font-size: 28px;
+  font-weight: 200;
+  text-transform: uppercase;
+  }
+
+#home{  
+  background: url("https://images3.alphacoders.com/225/thumb-1920-22567.jpg") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .welcome-box{
+  background: rgba(0, 0, 0, .6);
+  padding: 40px 15px;
+  }
+  
+h1{
+  font-size: 28px;
+  font-weight: 200;
+  text-transform: uppercase;
+  }
+
+
+
+#all-tasks{  
+  background: url(http://i11.wikimapia.org/?x=2942987&y=1427842&zoom=22&type=map&lng=0) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+ // height: 300px;
+  width: 100%;
+}
+.header{
+  background: url("https://images3.alphacoders.com/225/thumb-1920-22567.jpg") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+ // height: 300px;
+  width: 100%;
+}
+.top{
+background: rgba(58,71,147,.6);
+    padding: 50px 15px;
+  text-align: right;
+  }
+.logo{
+  float: left;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 36px;
+}
+
+.tasks-total {
+  position: relative;
+  top: -20px;
+}
+.task{
+  display: inline-block;
+}
+
+.tasks-total .task .number{
+  color: #22eccf;
+  font-weight: 200;
+  font-size: 50px;
+  margin: 0 10px 0 0;
+  position: relative;
+  top: 5px;
+  display:inline-block
+}
+.add-circle{
+  padding: 20px;
+  position: absolute;
+  right: 25px;
+  background: rgba(58,71,147, .6);
+  border-radius: 50%;
+}
+.add-circle .fa{
+  color: #22eccf;
+  font-size: 50px;
+}
+
+.content-area {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    color: red;
+}
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    /* border-bottom: 2px solid #9d9d9d; */
+    /* background: white; */
+    /* padding: 0 5px .5px; */
+}
+
+.tasks-container {
+    margin: 20px 0;
+    background-color: white;
+    padding: 0px;
+}
+
+.task-box {
+    margin: 10px 0 10px 0;
+    padding: 20px;
+    color: black;
+    font-size: 24px;
+    background: white;
+    border-bottom: 2px solid #9d9d9d;
+    position: relative;
+}
+
+.task-form{
+  background: #0f2043;
+  position: absolute;
+  z-index: 100;
+  top:0;
+  bottom:0;
+  width:100%;
+  color: #fff;
+  padding: 50px 0;
+  transform: translate(0, 100%);
+  transition: all .6s ease-in-out;
+}
+.task-form.active{
+  transform: translate(0, 0);
+ }
+
+.task-form form{
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+}
+.task-form label{
+  display: block;
+  text-transform: uppercase;
+  font-family: 'Shadows Into Light', cursive;
+  margin: 0 0 15px 0;
+}
+
+input[type="text"], textarea{
+  width: 100%;
+  background: rgba(255,255,255, .1);
+  font-weight: 300;
+  font-family:'Shadows Into Light', cursive;
+  font-size: 36px;
+  color: white;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,.7);
+}
+
+.focus{
+  border: none;
+  outline: none;
+}
+textarea{
+  height: 250px;
+}
+
+form{
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+button{
+  background:#22eccf;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.close-btn{
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.close-btn .fa{
+  font-size: 36px;
+}
+
+.title{
+  color: black;
+  font-size: 24px;
+}
+
+.date{
+  font-size: initial;
+  background: rgba(58,71,147, .6);
+  display: inline-block;
+}
+
+.check-box{
+  padding: 5px;
+  border-radius: 10px;
+  border: 3px solid rgba(58,71,147, .6);
+  background: rgba(58,71,147, .6);
+  display: inline-block;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+.check-box .fa{
+  color: #22eccf;
+}
+
+.btn{
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 15px 0;
+  background-color: #2287ec;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h3{
+  margin: 50px 0;
+  font-size: 36px;
+  text-align: center;
+}

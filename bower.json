@@ -1,0 +1,20 @@
+{
+  "name": "todoapp",
+  "homepage": "https://github.com/Braillon7/todoapp",
+  "authors": [
+    "William Watts <williamwatts38@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}
